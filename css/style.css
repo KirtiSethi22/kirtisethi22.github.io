@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+html{
+    background-color:slategrey;
+}
+body{
+    width: 95%;
+    margin: auto;
+    background-color: white;
+}
+header{
+    background-image:url(../images/logo.png);
+    background-repeat:no-repeat;
+    height:200px;
+    background-position: right;
+    padding:3%;
+    margin-right: 4%;
+}
+.heading1{
+position:absolute;
+width: 80%;
+padding-top: 3%;
+font-size: 45px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color:slategrey;
+}
+
+nav{
+    margin: 0px;
+    padding: 0px;
+    list-style-type:none;
+    background-image: url(../images/banner.jpg);
+    background-repeat:no-repeat;
+    background-size: 1700px 600px;
+    height: 500px;
+
+}
+nav >ul> li{
+    display: inline-block;
+    width: 323px;
+    text-align: center;
+    line-height: 2em;
+    border: 2px solid slategrey;
+    background-color:slategrey;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 5px;
+}
+nav > ul> li > a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    font-size: larger; 
+}
+.bannerl{
+    
+    text-align:center;
+}
+.bannerlink{
+    text-decoration: none;
+    color:slategrey;
+}
+.article{
+    height:600px;
+    font-size: 18px;
+}
+.heading2{
+    color: slategrey;
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+}
+
+.section1{
+   padding:5%;
+   text-align: justify;
+   width: 50%;
+   float: left;
+   
+}  
+
+.video1{
+    float: left;
+    width: 500px;
+    height: 280px;
+    margin: 5%;
+}
+.video2{
+    border: 5px solid slategrey;
+}
+.linkk{
+    text-decoration: none;
+    color:slategrey;
+}
+.a{
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sec{
+    font-size: 20px;
+    padding:5%;
+    text-align: justify;
+
+}
+
+.para{
+    margin: 2%;
+}
+
+.article2{
+    height:230px;
+    background-color: slategrey;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#imageFig{
+    margin-left: 11.5%;
+}
+figure > img{
+   
+   padding: 5px;
+   margin: 30px;
+   width: 100px;
+   height: 80px;
+}
+.images{
+    display: block;
+    float: left;
+    width: 310px;
+    height: 220px;
+    border: 5px solid slategrey;
+}
+.para3{
+    text-align: center;
+}
+input[type="button"]{
+margin: 20px;
+padding: 10px;
+border:5px solid slategrey; 
+border-radius: 20px;
+background-color: slategrey;
+color: white;
+font-family:'Courier New', Courier, monospace;
+font-size: 16px;
+}
+.button1{
+    text-align: center;
+}
+.radVideo{
+text-align: center;
+}
+.radVideo2{
+border: 5px solid slategrey;
+border-radius: 10px;
+}
+
+.formAlign{
+    text-align: center;
+}
+fieldset{
+    margin: auto;
+    padding: 5px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+legend{
+    background-color: slategrey;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+fieldset > div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px;  
+    text-align: left;
+}
+fieldset > div > *{
+    flex: 1 1 200px;
+}
+.No{
+    margin-left: 22%;
+}
+input[type="submit"]{
+    width: 45%;
+    background-color:slategrey;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+footer{
+    text-align: center;
+    background-color: slategrey;
+    color: white;
+    width: 100%;
+    padding: 1%;
+    clear: left;
+}
+
+/*Tablet Layout*/
+@media only screen and (min-width: 521px) and (max-width: 1000px){
+      
+    nav >ul> li{
+        width: 95%;
+    }
+    header{
+        height: 250px;
+    }
+    .article{
+        height: 1200px; 
+        font-size: 24px;
+    }
+    .article2{
+        height: 350px; 
+    }
+    .section1{
+        padding:5%;
+        text-align: justify;
+        width: 100%; 
+    }  
+    .video1{
+        margin-left: 10px;
+    }
+    .video2{
+        width: 500px;
+
+    }
+    #imageFig{
+        margin-left: 30px;
+    }
+    .para3{
+        margin-top: 20%;
+
+    }
+    .button{
+        margin-top: 20%;
+    }
+    .radVideo{
+        margin-top: 20%;
+
+    }
+    .radVideo2{
+        width: 400px;
+        height: 350;
+    }
+   
+    .para{
+        margin-top: 20%;
+    }
+    fieldset{
+        margin-top: 20%;
+    }
+  
+}
+
+
+/* small Screen Layout*/
+@media only screen and (max-width: 520px){
+    nav >ul> li{
+        width: 95%;
+    }
+    header{
+        height:200px;
+        background-size: 40%;
+    }
+    .heading1{
+        font-size: 25px;
+        margin-top: 8%;
+        margin-left:-10px;
+    }
+    .article{
+        
+        height: 1200px; 
+        font-size: 24px;
+    }
+    .section1{
+        padding:5%;
+        text-align: justify;
+        width: 100%; 
+    }  
+    .article2{
+        height: 350px; 
+    }
+    .video2{
+        width: 85%;
+
+    }
+    #imageFig{
+        margin-left: 30px;
+    }
+    .para3{
+        margin-top: 20%;
+
+    }
+    .button{
+        margin-top: 20%;
+    }
+    .radVideo{
+        margin-top: 20%;
+
+    }
+    .radVideo2{
+        width: 400px;
+        height: 350;
+    }
+   
+    .para{
+        margin-top: 20%;
+    }
+    fieldset{
+        margin-top: 20%;
+        width: 80%;
+    }
+    #Comment{
+        width: 80%;
+    }
+  
+       
+   
+   
+}
+
+
+
+/*CSS Validation*/
+select:focus {
+    background-color:slategrey;
+    color: white;
+ }
+
+ input#Name:focus:valid,
+ input#Phone:focus:valid,
+ input#Email:focus:valid,
+ input#Detail:focus:valid{
+    background-color: slategrey;
+    color: white;
+
+ }
+
+ input#Name:focus:invalid,
+ input#Phone:focus:invalid,
+ input#Email:focus:invalid,
+ input#Detail:focus:invalid{
+    background-color: slategrey;
+    color: white;
+}
+
